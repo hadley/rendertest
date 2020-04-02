@@ -11,3 +11,9 @@ vignette: >
 x <- 1 + 2
 x
 ```
+
+```{r}
+rmarkdown::pandoc_version()
+sessioninfo::session_info()
+```
+
