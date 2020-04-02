@@ -14,6 +14,6 @@ x
 
 ```{r}
 rmarkdown::pandoc_version()
-sessioninfo::session_info()
+sessioninfo::session_info("pkgdown")
 ```
 
