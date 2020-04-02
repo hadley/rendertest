@@ -22,12 +22,12 @@ jobs:
         shell: Rscript {0}
 
       - name: Set git config 1
-        run: git config --global user.email "bot@rstudio.com"
+        run: git config user.email "bot@rstudio.com"
       - name: Set git config 2
-        run: git config --global user.name "Bot"
+        run: git config user.name "Bot"
 
       - name: Get git
-        run: git config --global user.email
+        run: git config user.email
 
       - name: Deploy package
         run: pkgdown::deploy_to_branch(new_process = FALSE, branch = "gh-pages-win")
